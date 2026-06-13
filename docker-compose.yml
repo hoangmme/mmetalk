@@ -1,0 +1,76 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: chatwoot-web
+    env_file: .env
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DATABASE=${POSTGRES_DATABASE:-chatwoot}
+      - POSTGRES_USERNAME=${POSTGRES_USERNAME:-chatwoot}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-chatwoot_db_pass}
+      - REDIS_URL=${REDIS_URL:-redis://redis:6379}
+      - FRONTEND_URL=${FRONTEND_URL:-https://woot.mme.vn}
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE:-please_generate_a_secure_key_base_in_env_file}
+    volumes:
+      - chatwoot_storage_v3:/app/storage
+    command: sh -c "bundle exec rails db:chatwoot_prepare && bundle exec rails s -p 3000 -b 0.0.0.0"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: always
+
+  sidekiq:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: chatwoot-sidekiq
+    env_file: .env
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DATABASE=${POSTGRES_DATABASE:-chatwoot}
+      - POSTGRES_USERNAME=${POSTGRES_USERNAME:-chatwoot}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-chatwoot_db_pass}
+      - REDIS_URL=${REDIS_URL:-redis://redis:6379}
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE:-please_generate_a_secure_key_base_in_env_file}
+    volumes:
+      - chatwoot_storage_v3:/app/storage
+    command: ['bundle', 'exec', 'sidekiq', '-C', 'config/sidekiq.yml']
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: always
+
+  postgres:
+    image: pgvector/pgvector:pg15
+    container_name: chatwoot-postgres
+    restart: always
+    volumes:
+      - postgres_data_v3:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=${POSTGRES_DATABASE:-chatwoot}
+      - POSTGRES_USER=${POSTGRES_USERNAME:-chatwoot}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-chatwoot_db_pass}
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ${POSTGRES_USERNAME:-chatwoot} -d ${POSTGRES_DATABASE:-chatwoot}']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: chatwoot-redis
+    restart: always
+    command: ["redis-server", "--save", "60", "1", "--loglevel", "warning"]
+    volumes:
+      - redis_data_v3:/data
+
+volumes:
+  chatwoot_storage_v3:
+  postgres_data_v3:
+  redis_data_v3:
