@@ -11,7 +11,7 @@ services:
       - POSTGRES_USERNAME=${POSTGRES_USERNAME:-chatwoot}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-chatwoot_db_pass}
       - REDIS_URL=${REDIS_URL:-redis://redis:6379}
-      - FRONTEND_URL=${FRONTEND_URL:-https://woot.mme.vn}
+      - FRONTEND_URL=${FRONTEND_URL:-https://talk.mme.vn}
       - SECRET_KEY_BASE=${SECRET_KEY_BASE:-please_generate_a_secure_key_base_in_env_file}
     volumes:
       - chatwoot_storage_v3:/app/storage
