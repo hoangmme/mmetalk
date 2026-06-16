@@ -41,7 +41,7 @@ export const createBubbleIcon = ({ className, path, target, avatarUrl }) => {
   }
   
   if (isDefault) {
-    // Không cần thêm style riêng vì sẽ dùng bubble-logo
+    imgStyle += ' filter: brightness(0) invert(1);';
   }
   
   bubbleImage.setAttribute('style', imgStyle);

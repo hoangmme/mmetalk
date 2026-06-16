@@ -184,12 +184,11 @@ const handleToggleWidget = () => {
             <WidgetFooter :config="getWidgetConfig" />
             <div class="py-2.5 flex justify-center">
               <a
-                class="items-center gap-0.5 text-n-slate-11 cursor-pointer flex filter grayscale opacity-90 hover:grayscale-0 hover:opacity-100 text-xxs"
+                class="items-center gap-1 text-n-slate-11 cursor-pointer flex opacity-90 hover:opacity-100 text-xxs whitespace-nowrap"
               >
                 <img
-                  class="max-w-2.5 max-h-2.5"
+                  class="max-w-3 max-h-3 grayscale"
                   :src="globalConfig.logoThumbnail"
-                  style="filter: invert(1);"
                 />
                 <span>
                   {{
@@ -219,7 +218,7 @@ const handleToggleWidget = () => {
               src="~dashboard/assets/images/bubble-logo.svg"
               alt=""
               draggable="false"
-              class="w-6 h-6 mx-auto"
+              class="w-6 h-6 mx-auto brightness-0 invert"
             />
             <div v-if="isBubbleExpanded" class="ltr:pl-2.5 rtl:pr-2.5">
               {{ getWidgetBubbleLauncherTitle }}
