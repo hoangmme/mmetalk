@@ -215,10 +215,10 @@ const handleToggleWidget = () => {
           >
             <img
               v-if="!isWidgetVisible"
-              src="~dashboard/assets/images/bubble-logo.svg"
+              src="https://mme.vn/wp-content/uploads/2026/06/Group-4.webp"
               alt=""
               draggable="false"
-              class="w-6 h-6 mx-auto brightness-0 invert"
+              class="w-6 h-6 mx-auto bg-white p-1 rounded-full invert"
             />
             <div v-if="isBubbleExpanded" class="ltr:pl-2.5 rtl:pr-2.5">
               {{ getWidgetBubbleLauncherTitle }}
