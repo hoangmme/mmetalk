@@ -187,7 +187,7 @@ const handleToggleWidget = () => {
                 class="items-center gap-1 text-n-slate-11 cursor-pointer flex opacity-90 hover:opacity-100 text-xxs whitespace-nowrap"
               >
                 <img
-                  class="max-w-3 max-h-3 grayscale"
+                  class="max-w-3 max-h-3 grayscale object-contain"
                   :src="globalConfig.logoThumbnail"
                 />
                 <span>
@@ -218,7 +218,7 @@ const handleToggleWidget = () => {
               src="~dashboard/assets/images/default_invert.png"
               alt=""
               draggable="false"
-              class="w-6 h-6 mx-auto"
+              class="w-6 h-6 mx-auto object-contain"
             />
             <div v-if="isBubbleExpanded" class="ltr:pl-2.5 rtl:pr-2.5">
               {{ getWidgetBubbleLauncherTitle }}

@@ -41,7 +41,7 @@ export const createBubbleIcon = ({ className, path, target, avatarUrl }) => {
   }
   
   if (isDefault) {
-    // Custom styling for default logo removed as default_invert.png is already styled
+    imgStyle += ' object-fit: contain; padding: 6px;';
   }
   
   bubbleImage.setAttribute('style', imgStyle);
