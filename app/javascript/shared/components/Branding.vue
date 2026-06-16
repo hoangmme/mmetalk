@@ -67,7 +67,7 @@ export default {
         :alt="globalConfig.brandName"
         :src="globalConfig.logoThumbnail"
       />
-      <span>
+      <span class="whitespace-nowrap">
         {{ replaceInstallationName($t('POWERED_BY')) }}
       </span>
     </a>
