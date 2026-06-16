@@ -189,6 +189,7 @@ const handleToggleWidget = () => {
                 <img
                   class="max-w-2.5 max-h-2.5"
                   :src="globalConfig.logoThumbnail"
+                  style="filter: invert(1);"
                 />
                 <span>
                   {{

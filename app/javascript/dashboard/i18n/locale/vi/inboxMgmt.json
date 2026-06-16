@@ -1166,7 +1166,7 @@
         "USER_MESSAGE": "Xin chào",
         "AGENT_MESSAGE": "Xin chào"
       },
-      "BRANDING_TEXT": "CC bởi MMe Talk",
+      "BRANDING_TEXT": "Powered by MMe Digital",
       "SCRIPT_SETTINGS": "\nwindow.mmetalkSettings = {options};"
     },
     "EMAIL_PROVIDERS": {

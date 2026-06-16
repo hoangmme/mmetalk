@@ -1170,7 +1170,7 @@
         "USER_MESSAGE": "Hi",
         "AGENT_MESSAGE": "Hello"
       },
-      "BRANDING_TEXT": "Powered by MMe Talk",
+      "BRANDING_TEXT": "Powered by MMe Digital",
       "SCRIPT_SETTINGS": "\n      window.mmetalkSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
