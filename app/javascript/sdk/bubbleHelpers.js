@@ -27,40 +27,27 @@ export const setBubbleText = bubbleText => {
 
 export const createBubbleIcon = ({ className, path, target, avatarUrl }) => {
   let bubbleClassName = `${className} woot-elements--${window.$chatwoot.position}`;
+  const DEFAULT_LOGO = 'https://mme.vn/wp-content/uploads/2026/06/Group-4.webp';
+  const imgUrl = avatarUrl || DEFAULT_LOGO;
+  const isDefault = !avatarUrl;
+
+  const bubbleImage = document.createElement('img');
+  bubbleImage.setAttribute('src', imgUrl);
+  bubbleImage.setAttribute('alt', 'Chatwoot widget bubble');
   
-  if (avatarUrl) {
-    const bubbleImage = document.createElement('img');
-    bubbleImage.setAttribute('src', avatarUrl);
-    bubbleImage.setAttribute('alt', 'Chatwoot widget bubble');
-    if (isExpandedView(window.$chatwoot.type)) {
-      bubbleImage.setAttribute('style', 'width: 20px; height: 20px; border-radius: 50%; object-fit: cover; margin: 14px 8px 14px 16px;');
-    } else {
-      bubbleImage.setAttribute('style', 'width: 100%; height: 100%; border-radius: 50%; object-fit: cover;');
-    }
-    bubbleImage.id = 'woot-widget-bubble-icon';
-    target.appendChild(bubbleImage);
-  } else {
-    const bubbleIcon = document.createElementNS(
-      'http://www.w3.org/2000/svg',
-      'svg'
-    );
-    bubbleIcon.setAttributeNS(null, 'id', 'woot-widget-bubble-icon');
-    bubbleIcon.setAttributeNS(null, 'width', '24');
-    bubbleIcon.setAttributeNS(null, 'height', '24');
-    bubbleIcon.setAttributeNS(null, 'viewBox', '0 0 240 240');
-    bubbleIcon.setAttributeNS(null, 'fill', 'none');
-    bubbleIcon.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-
-    const bubblePath = document.createElementNS(
-      'http://www.w3.org/2000/svg',
-      'path'
-    );
-    bubblePath.setAttributeNS(null, 'd', path);
-    bubblePath.setAttributeNS(null, 'fill', '#FFFFFF');
-
-    bubbleIcon.appendChild(bubblePath);
-    target.appendChild(bubbleIcon);
+  let imgStyle = 'width: 100%; height: 100%; border-radius: 50%; object-fit: cover;';
+  if (isExpandedView(window.$chatwoot.type)) {
+    imgStyle = 'width: 20px; height: 20px; border-radius: 50%; object-fit: cover; margin: 14px 8px 14px 16px;';
   }
+  
+  if (isDefault) {
+    // Thêm nền trắng và padding cho logo mặc định, invert theo yêu cầu
+    imgStyle += ' background-color: white; filter: invert(1); object-fit: contain; padding: 6px;';
+  }
+  
+  bubbleImage.setAttribute('style', imgStyle);
+  bubbleImage.id = 'woot-widget-bubble-icon';
+  target.appendChild(bubbleImage);
 
   if (isExpandedView(window.$chatwoot.type)) {
     const textNode = document.createElement('div');
