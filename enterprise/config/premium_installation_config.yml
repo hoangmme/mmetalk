@@ -14,9 +14,9 @@
 - name: BRAND_NAME
   value: 'Chatwoot'
 - name: TERMS_URL
-  value: 'https://www.chatwoot.com/terms-of-service'
+  value: 'https://mme.vn/dieu-khoan-su-dung/'
 - name: PRIVACY_URL
-  value: 'https://www.chatwoot.com/privacy-policy'
+  value: 'https://mme.vn/chinh-sach-bao-mat/'
 - name: DISPLAY_MANIFEST
   value: true
 # ------- End of Branding Related Config ------- #
