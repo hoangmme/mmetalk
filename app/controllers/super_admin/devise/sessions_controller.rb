@@ -16,7 +16,7 @@ class SuperAdmin::Devise::SessionsController < Devise::SessionsController
   def destroy
     sign_out
     flash.discard
-    redirect_to '/'
+    redirect_to '/super_admin'
   end
 
   private

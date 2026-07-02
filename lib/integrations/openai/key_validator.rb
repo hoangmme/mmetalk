@@ -21,6 +21,7 @@ module Integrations::Openai::KeyValidator
 
   def self.api_base
     endpoint = InstallationConfig.find_by(name: 'CAPTAIN_OPEN_AI_ENDPOINT')&.value.presence || 'https://api.openai.com/'
-    "#{endpoint.chomp('/')}/v1"
+    base = endpoint.chomp('/').sub(/\/v1$/, '')
+    "#{base}/v1"
   end
 end

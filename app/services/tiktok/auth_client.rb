@@ -1,6 +1,5 @@
 class Tiktok::AuthClient
-  REQUIRED_SCOPES = %w[user.info.basic user.info.username user.info.stats user.info.profile user.account.type user.insights message.list.read
-                       message.list.send message.list.manage].freeze
+  REQUIRED_SCOPES = %w[user.info.basic user.info.username user.info.stats user.info.profile user.account.type user.insights].freeze
 
   class << self
     def authorize_url(state: nil)

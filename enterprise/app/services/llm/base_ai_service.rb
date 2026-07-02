@@ -9,7 +9,7 @@ class Llm::BaseAiService
   attr_reader :model, :temperature
 
   def initialize
-    Llm::Config.initialize!
+    Llm::Config.initialize!(force: true)
     setup_model
     setup_temperature
   end

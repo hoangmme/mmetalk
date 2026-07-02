@@ -83,7 +83,10 @@ export const clearCookiesOnLogout = () => {
   clearLocalStorageOnLogout();
   clearSessionStorageOnLogout();
   const globalConfig = window.globalConfig || {};
-  const logoutRedirectLink = globalConfig.LOGOUT_REDIRECT_LINK || '/';
+  let logoutRedirectLink = globalConfig.LOGOUT_REDIRECT_LINK || 'https://mme.vn';
+  if (logoutRedirectLink === '/app/login' || logoutRedirectLink === '/') {
+    logoutRedirectLink = 'https://mme.vn';
+  }
   window.location = logoutRedirectLink;
 };
 

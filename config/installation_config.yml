@@ -331,7 +331,7 @@
   value:
   description: 'Custom thumbnail for the API channel'
 - name: LOGOUT_REDIRECT_LINK
-  value: /app/login
+  value: https://mme.vn
   locked: false
   description: 'Redirect to a different link after logout'
 - name: DISABLE_USER_PROFILE_UPDATE

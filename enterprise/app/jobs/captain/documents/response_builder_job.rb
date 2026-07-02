@@ -11,11 +11,39 @@ class Captain::Documents::ResponseBuilderJob < ApplicationJob
   private
 
   def generate_faqs(document, options)
+    content = document.content.to_s
+    return [] if content.blank?
+
     if should_use_pagination?(document)
       generate_paginated_faqs(document, options)
+    elsif document.pdf_document? || content.length > 3000
+      generate_local_rag_faqs(document)
     else
       generate_standard_faqs(document)
     end
+  end
+
+  def generate_local_rag_faqs(document)
+    chunks = Captain::Llm::LocalRagService.chunk_text(document.content)
+    faqs = []
+    chunks.each_with_index do |chunk, index|
+      chunk_doc = document.dup
+      chunk_doc.content = chunk
+      generated = Captain::Llm::FaqGeneratorService.new(document: chunk_doc).generate
+      if generated.present?
+        faqs.concat(generated)
+      else
+        title = document.name.presence || document.external_link
+        faqs << {
+          'question' => "#{title} (Phần #{index + 1})",
+          'answer' => chunk
+        }
+      end
+    end
+    faqs
+  rescue StandardError => e
+    Rails.logger.error("[ResponseBuilderJob] Local RAG chunking error: #{e.message}")
+    generate_standard_faqs(document)
   end
 
   def generate_paginated_faqs(document, options)
@@ -26,7 +54,18 @@ class Captain::Documents::ResponseBuilderJob < ApplicationJob
   end
 
   def generate_standard_faqs(document)
-    Captain::Llm::FaqGeneratorService.new(document: document).generate
+    faqs = Captain::Llm::FaqGeneratorService.new(document: document).generate
+    if faqs.blank? && document.content.present?
+      title = document.name.presence || document.external_link
+      faqs = [{ 'question' => title, 'answer' => document.content }]
+    end
+    faqs
+  rescue StandardError => e
+    Rails.logger.error("[ResponseBuilderJob] Standard FAQ generation failed: #{e.message}")
+    return [] if document.content.blank?
+
+    title = document.name.presence || document.external_link
+    [{ 'question' => title, 'answer' => document.content }]
   end
 
   def build_paginated_service(document, options)

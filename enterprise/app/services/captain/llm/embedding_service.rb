@@ -19,12 +19,31 @@ class Captain::Llm::EmbeddingService
     instrument_embedding_call(instrumentation_params(content, model)) do
       RubyLLM.embed(content, model: model).vectors
     end
-  rescue RubyLLM::Error => e
-    Rails.logger.error "Embedding API Error: #{e.message}"
-    raise EmbeddingsError, "Failed to create an embedding: #{e.message}"
+  rescue StandardError => e
+    Rails.logger.warn "Embedding API Error (#{e.class}: #{e.message}), falling back to local hash embedding"
+    generate_hash_embedding(content)
   end
 
   private
+
+  def generate_hash_embedding(text, dim = 1536)
+    require 'digest'
+    vector = Array.new(dim, 0.0)
+    tokens = text.to_s.downcase.scan(/[\wÀ-ỹ]+/)
+    return vector if tokens.empty?
+
+    tokens.each do |token|
+      digest = Digest::SHA256.digest(token)
+      index = digest[0, 4].unpack1('V') % dim
+      sign = (digest[4].ord % 2).zero? ? 1.0 : -1.0
+      vector[index] += sign
+    end
+
+    norm = Math.sqrt(vector.sum { |v| v**2 })
+    return vector if norm.zero?
+
+    vector.map { |v| (v / norm).round(6) }
+  end
 
   def instrumentation_params(content, model)
     {

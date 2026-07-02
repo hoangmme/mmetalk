@@ -23,10 +23,10 @@
     "SEARCH_PLACEHOLDER": "Search integrations...",
     "NO_RESULTS": "No integrations found matching your search",
     "CAPTAIN": {
-      "DISABLED": "Captain is not enabled on your account.",
-      "CLICK_HERE_TO_CONFIGURE": "Click here to configure",
-      "LOADING_CONSOLE": "Loading Captain Console...",
-      "FAILED_TO_LOAD_CONSOLE": "Failed to load Captain Console. Please refresh and try again."
+      "DISABLED": "MMe AI chưa được kích hoạt trên tài khoản của bạn.",
+      "CLICK_HERE_TO_CONFIGURE": "Nhấp vào đây để cấu hình",
+      "LOADING_CONSOLE": "Đang tải giao diện MMe AI...",
+      "FAILED_TO_LOAD_CONSOLE": "Không thể tải bảng điều khiển MMe AI. Vui lòng làm mới trang và thử lại."
     },
     "WEBHOOK": {
       "SUBSCRIBED_EVENTS": "Những sự kiện được theo dõi",
@@ -390,7 +390,7 @@
     }
   },
   "CAPTAIN": {
-    "NAME": "Captain",
+    "NAME": "MMe AI",
     "HEADER_KNOW_MORE": "Tìm hiểu thêm",
     "ASSISTANT_SWITCHER": {
       "ASSISTANTS": "Trợ lý",
@@ -400,13 +400,13 @@
     },
     "COPILOT": {
       "TITLE": "Copilot",
-      "TRY_THESE_PROMPTS": "Try these prompts",
+      "TRY_THESE_PROMPTS": "Thử các gợi ý sau",
       "PANEL_TITLE": "Bắt đầu với Copilot",
       "KICK_OFF_MESSAGE": "Cần tóm tắt nhanh, muốn kiểm tra các cuộc trò chuyện trước, hay soạn câu trả lời tốt hơn? Copilot sẽ giúp tăng tốc.",
       "SEND_MESSAGE": "Gửi tin nhắn...",
       "EMPTY_MESSAGE": "Đã xảy ra lỗi khi tạo phản hồi. Vui lòng thử lại.",
-      "LOADER": "Captain đang suy nghĩ",
-      "YOU": "You",
+      "LOADER": "MMe AI đang suy nghĩ",
+      "YOU": "Bạn",
       "USE": "Sử dụng cái này",
       "RESET": "Đặt lại",
       "SHOW_STEPS": "Hiển thị các bước",
@@ -435,28 +435,28 @@
       }
     },
     "PLAYGROUND": {
-      "USER": "You",
+      "USER": "Bạn",
       "ASSISTANT": "Trợ lý",
       "MESSAGE_PLACEHOLDER": "Gõ tin nhắn của bạn...",
       "HEADER": "Sân chơi",
-      "DESCRIPTION": "Sử dụng sân chơi này để gửi tin nhắn tới trợ lý của bạn và kiểm tra xem nó phản hồi có chính xác, nhanh chóng và đúng giọng bạn mong đợi không.",
-      "CREDIT_NOTE": "Tin nhắn gửi ở đây sẽ tính vào tín dụng Captain của bạn."
+      "DESCRIPTION": "Sử dụng sân chơi này để gửi tin nhắn tới trợ lý của bạn và kiểm tra xem AI phản hồi có chính xác, nhanh chóng và đúng giọng văn mong đợi không.",
+      "CREDIT_NOTE": "Tin nhắn gửi ở đây sẽ tính vào lượt sử dụng MMe AI của bạn."
     },
     "PAYWALL": {
-      "TITLE": "Nâng cấp để sử dụng Captain AI",
-      "AVAILABLE_ON": "Captain không khả dụng trên gói miễn phí.",
-      "UPGRADE_PROMPT": "Nâng cấp gói của bạn để truy cập trợ lý, copilot và nhiều hơn nữa.",
-      "UPGRADE_NOW": "Upgrade now",
-      "CANCEL_ANYTIME": "You can change or cancel your plan anytime"
+      "TITLE": "Nâng cấp để sử dụng MMe AI",
+      "AVAILABLE_ON": "MMe AI không khả dụng trên gói miễn phí.",
+      "UPGRADE_PROMPT": "Nâng cấp gói của bạn để truy cập trợ lý, copilot và nhiều tính năng hơn nữa.",
+      "UPGRADE_NOW": "Nâng cấp ngay",
+      "CANCEL_ANYTIME": "Bạn có thể thay đổi hoặc hủy gói bất kỳ lúc nào"
     },
     "ENTERPRISE_PAYWALL": {
-      "AVAILABLE_ON": "Captain AI chỉ có trong các gói Doanh nghiệp.",
-      "UPGRADE_PROMPT": "Nâng cấp gói của bạn để truy cập trợ lý, copilot và nhiều hơn nữa.",
-      "ASK_ADMIN": "Please reach out to your administrator for the upgrade."
+      "AVAILABLE_ON": "MMe AI chỉ có trong các gói Doanh nghiệp.",
+      "UPGRADE_PROMPT": "Nâng cấp gói của bạn để truy cập trợ lý, copilot và nhiều tính năng hơn nữa.",
+      "ASK_ADMIN": "Vui lòng liên hệ với quản trị viên của bạn để nâng cấp."
     },
     "BANNER": {
-      "RESPONSES": "Bạn đã sử dụng hơn 80% giới hạn phản hồi. Để tiếp tục sử dụng Captain AI, vui lòng nâng cấp.",
-      "DOCUMENTS": "Giới hạn tài liệu đã đạt. Nâng cấp để tiếp tục sử dụng Captain AI."
+      "RESPONSES": "Bạn đã sử dụng hơn 80% giới hạn phản hồi. Để tiếp tục sử dụng MMe AI, vui lòng nâng cấp.",
+      "DOCUMENTS": "Giới hạn tài liệu đã đạt. Nâng cấp để tiếp tục sử dụng MMe AI."
     },
     "FORM": {
       "CANCEL": "Huỷ",
@@ -464,121 +464,121 @@
       "EDIT": "Cập nhật"
     },
     "ASSISTANTS": {
-      "HEADER": "Assistants",
-      "NO_ASSISTANTS_AVAILABLE": "There are no assistants available in your account.",
-      "ADD_NEW": "Create a new assistant",
+      "HEADER": "Trợ lý",
+      "NO_ASSISTANTS_AVAILABLE": "Chưa có trợ lý nào trong tài khoản của bạn.",
+      "ADD_NEW": "Tạo trợ lý mới",
       "DELETE": {
-        "TITLE": "Are you sure to delete the assistant?",
-        "DESCRIPTION": "This action is permanent. Deleting this assistant will remove it from all connected inboxes and permanently erase all generated knowledge.",
+        "TITLE": "Bạn có chắc chắn muốn xóa trợ lý này?",
+        "DESCRIPTION": "Hành động này không thể hoàn tác. Xóa trợ lý sẽ gỡ bỏ khỏi tất cả các hộp thư đã kết nối và xóa vĩnh viễn toàn bộ cơ sở kiến thức.",
         "CONFIRM": "Có, xoá",
-        "SUCCESS_MESSAGE": "The assistant has been successfully deleted",
-        "ERROR_MESSAGE": "There was an error deleting the assistant, please try again."
+        "SUCCESS_MESSAGE": "Trợ lý đã được xóa thành công",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi xóa trợ lý, vui lòng thử lại."
       },
-      "FORM_DESCRIPTION": "Fill out the details below to name your assistant, describe its purpose, and specify the product it will support.",
+      "FORM_DESCRIPTION": "Điền thông tin bên dưới để đặt tên cho trợ lý, mô tả mục đích và chỉ định sản phẩm hỗ trợ.",
       "CREATE": {
-        "TITLE": "Create an assistant",
-        "SUCCESS_MESSAGE": "The assistant has been successfully created",
-        "ERROR_MESSAGE": "There was an error creating the assistant, please try again."
+        "TITLE": "Tạo trợ lý AI",
+        "SUCCESS_MESSAGE": "Trợ lý đã được tạo thành công",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi tạo trợ lý, vui lòng thử lại."
       },
       "FORM": {
         "UPDATE": "Cập nhật",
         "SECTIONS": {
-          "BASIC_INFO": "Basic Information",
-          "SYSTEM_MESSAGES": "System Messages",
-          "INSTRUCTIONS": "Instructions",
+          "BASIC_INFO": "Thông tin cơ bản",
+          "SYSTEM_MESSAGES": "Tin nhắn hệ thống",
+          "INSTRUCTIONS": "Hướng dẫn chi tiết",
           "FEATURES": "Các tính năng",
-          "TOOLS": "Tools "
+          "TOOLS": "Công cụ "
         },
         "NAME": {
-          "LABEL": "Tên",
-          "PLACEHOLDER": "Enter assistant name",
-          "ERROR": "The name is required"
+          "LABEL": "Tên trợ lý",
+          "PLACEHOLDER": "Nhập tên trợ lý",
+          "ERROR": "Tên trợ lý là bắt buộc"
         },
         "TEMPERATURE": {
-          "LABEL": "Response Temperature",
-          "DESCRIPTION": "Adjust how creative or restrictive the assistant's responses should be. Lower values produce more focused and deterministic responses, while higher values allow for more creative and varied outputs."
+          "LABEL": "Độ sáng tạo (Temperature)",
+          "DESCRIPTION": "Điều chỉnh mức độ sáng tạo của câu trả lời. Giá trị thấp cho phản hồi chính xác và nhất quán, giá trị cao cho câu trả lời sáng tạo và đa dạng hơn."
         },
         "DESCRIPTION": {
           "LABEL": "Mô tả",
-          "PLACEHOLDER": "Enter assistant description",
-          "ERROR": "The description is required"
+          "PLACEHOLDER": "Nhập mô tả cho trợ lý",
+          "ERROR": "Mô tả là bắt buộc"
         },
         "PRODUCT_NAME": {
-          "LABEL": "Product Name",
-          "PLACEHOLDER": "Enter product name",
-          "ERROR": "The product name is required"
+          "LABEL": "Tên sản phẩm/Dịch vụ",
+          "PLACEHOLDER": "Nhập tên sản phẩm/dịch vụ hỗ trợ",
+          "ERROR": "Tên sản phẩm là bắt buộc"
         },
         "WELCOME_MESSAGE": {
-          "LABEL": "Welcome Message",
-          "PLACEHOLDER": "Enter welcome message"
+          "LABEL": "Tin nhắn chào mừng",
+          "PLACEHOLDER": "Nhập tin nhắn chào mừng khách hàng"
         },
         "HANDOFF_MESSAGE": {
-          "LABEL": "Handoff Message",
-          "PLACEHOLDER": "Enter handoff message"
+          "LABEL": "Tin nhắn chuyển tiếp nhân viên",
+          "PLACEHOLDER": "Nhập tin nhắn khi chuyển cuộc trò chuyện cho nhân viên"
         },
         "RESOLUTION_MESSAGE": {
-          "LABEL": "Resolution Message",
-          "PLACEHOLDER": "Enter resolution message"
+          "LABEL": "Tin nhắn kết thúc hội thoại",
+          "PLACEHOLDER": "Nhập tin nhắn khi giải quyết xong vấn đề"
         },
         "INSTRUCTIONS": {
-          "LABEL": "Instructions",
-          "PLACEHOLDER": "Enter instructions for the assistant"
+          "LABEL": "Hướng dẫn nghiệp vụ (Prompt)",
+          "PLACEHOLDER": "Nhập hướng dẫn chi tiết cách trợ lý giao tiếp và xử lý tình huống"
         },
         "FEATURES": {
           "TITLE": "Các tính năng",
-          "ALLOW_CONVERSATION_FAQS": "Generate FAQs from resolved conversations",
-          "ALLOW_MEMORIES": "Capture key details as memories from customer interactions.",
-          "ALLOW_CITATIONS": "Include source citations in responses",
-          "ALLOW_CONTACT_ATTRIBUTES": "Allow access to contact information"
+          "ALLOW_CONVERSATION_FAQS": "Tự động tạo câu hỏi thường gặp (FAQ) từ các hội thoại đã giải quyết",
+          "ALLOW_MEMORIES": "Ghi nhớ các thông tin quan trọng từ hội thoại với khách hàng",
+          "ALLOW_CITATIONS": "Trích dẫn nguồn tài liệu tham khảo trong câu trả lời",
+          "ALLOW_CONTACT_ATTRIBUTES": "Cho phép AI truy cập thông tin liên hệ của khách hàng"
         }
       },
       "EDIT": {
-        "TITLE": "Update the assistant",
-        "SUCCESS_MESSAGE": "The assistant has been successfully updated",
-        "ERROR_MESSAGE": "There was an error updating the assistant, please try again.",
-        "NOT_FOUND": "Could not find the assistant. Please try again."
+        "TITLE": "Cập nhật trợ lý",
+        "SUCCESS_MESSAGE": "Trợ lý đã được cập nhật thành công",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi cập nhật trợ lý, vui lòng thử lại.",
+        "NOT_FOUND": "Không tìm thấy trợ lý. Vui lòng thử lại."
       },
       "SETTINGS": {
         "HEADER": "Cài đặt",
         "BASIC_SETTINGS": {
-          "TITLE": "Basic settings",
-          "DESCRIPTION": "Customize what the assistant says when ending a conversation or transferring to a human."
+          "TITLE": "Cài đặt cơ bản",
+          "DESCRIPTION": "Tùy chỉnh nội dung trợ lý trả lời khi chào mừng, kết thúc hội thoại hoặc chuyển tiếp cho nhân viên."
         },
         "SYSTEM_SETTINGS": {
-          "TITLE": "System settings",
-          "DESCRIPTION": "Customize what the assistant says when ending a conversation or transferring to a human."
+          "TITLE": "Cài đặt hệ thống",
+          "DESCRIPTION": "Tùy chỉnh các tin nhắn hệ thống của trợ lý."
         },
         "CONTROL_ITEMS": {
-          "TITLE": "The Fun Stuff",
-          "DESCRIPTION": "Add more control to the assistant. (a bit more visual like a story : Query guardrail → scenarios → output) Nudges user to actually utilise these.",
+          "TITLE": "Kiểm soát nâng cao",
+          "DESCRIPTION": "Thêm các quy tắc kiểm soát luồng phản hồi cho trợ lý AI.",
           "OPTIONS": {
             "GUARDRAILS": {
-              "TITLE": "Guardrails",
-              "DESCRIPTION": "Keeps things on track—only the kinds of questions you want your assistant to answer, nothing off-limits or off-topic."
+              "TITLE": "Rào chắn phạm vi (Guardrails)",
+              "DESCRIPTION": "Đảm bảo trợ lý chỉ trả lời trong phạm vi nghiệp vụ cho phép, không lệch đề hoặc trả lời ngoài vùng kiến thức."
             },
             "RESPONSE_GUIDELINES": {
-              "TITLE": "Response guidelines",
-              "DESCRIPTION": "The vibe and structure of your assistant’s replies—clear and friendly? Short and snappy? Detailed and formal?"
+              "TITLE": "Quy tắc phản hồi",
+              "DESCRIPTION": "Quy định cấu trúc và văn phong câu trả lời của trợ lý: ngắn gọn xúc tích hay chi tiết trang trọng?"
             }
           }
         },
         "DELETE": {
-          "TITLE": "Delete Assistant",
-          "DESCRIPTION": "This action is permanent. Deleting this assistant will remove it from all connected inboxes and permanently erase all generated knowledge.",
-          "BUTTON_TEXT": "Delete {assistantName}"
+          "TITLE": "Xóa trợ lý",
+          "DESCRIPTION": "Hành động này không thể hoàn tác. Xóa trợ lý sẽ gỡ bỏ khỏi tất cả hộp thư và xóa vĩnh viễn toàn bộ cơ sở kiến thức.",
+          "BUTTON_TEXT": "Xóa {assistantName}"
         }
       },
       "OPTIONS": {
-        "EDIT_ASSISTANT": "Edit Assistant",
-        "DELETE_ASSISTANT": "Delete Assistant",
-        "VIEW_CONNECTED_INBOXES": "View connected inboxes"
+        "EDIT_ASSISTANT": "Chỉnh sửa trợ lý",
+        "DELETE_ASSISTANT": "Xóa trợ lý",
+        "VIEW_CONNECTED_INBOXES": "Xem hộp thư đã kết nối"
       },
       "EMPTY_STATE": {
-        "TITLE": "No assistants available",
-        "SUBTITLE": "Create an assistant to provide quick and accurate responses to your users. It can learn from your help articles and past conversations.",
+        "TITLE": "Chưa có trợ lý nào",
+        "SUBTITLE": "Tạo trợ lý để tự động trả lời khách hàng nhanh chóng và chính xác. Trợ lý có thể học từ tài liệu hướng dẫn và hội thoại trước đây.",
         "FEATURE_SPOTLIGHT": {
-          "TITLE": "Captain Assistant",
-          "NOTE": "Captain Assistant engages directly with customers, learns from your help docs and past conversations, and delivers instant, accurate responses. It handles the initial queries, providing quick resolutions before  transferring to an agent when needed."
+          "TITLE": "Trợ lý MMe AI",
+          "NOTE": "Trợ lý MMe AI trò chuyện trực tiếp với khách hàng, học từ tài liệu KB và đưa ra phản hồi tức thì, chính xác trước khi chuyển tiếp cho nhân viên khi cần."
         }
       },
       "GUARDRAILS": {
@@ -737,120 +737,120 @@
       }
     },
     "DOCUMENTS": {
-      "HEADER": "Documents",
-      "ADD_NEW": "Create a new document",
-      "SELECTED": "{count} selected",
-      "SELECT_ALL": "Select all ({count})",
-      "UNSELECT_ALL": "Unselect all ({count})",
-      "BULK_DELETE_BUTTON": "Xoá",
+      "HEADER": "Tài liệu",
+      "ADD_NEW": "Thêm tài liệu mới",
+      "SELECTED": "{count} đã chọn",
+      "SELECT_ALL": "Chọn tất cả ({count})",
+      "UNSELECT_ALL": "Bỏ chọn tất cả ({count})",
+      "BULK_DELETE_BUTTON": "Xóa",
       "BULK_SYNC_BUTTON": "Làm mới",
       "BULK_DELETE": {
-        "TITLE": "Delete documents?",
-        "DESCRIPTION": "Are you sure you want to delete the selected documents? This action cannot be undone.",
-        "CONFIRM": "Yes, delete all",
-        "SUCCESS_MESSAGE": "Documents deleted successfully",
-        "ERROR_MESSAGE": "There was an error deleting the documents, please try again."
+        "TITLE": "Xóa các tài liệu đã chọn?",
+        "DESCRIPTION": "Bạn có chắc chắn muốn xóa các tài liệu đã chọn? Hành động này không thể hoàn tác.",
+        "CONFIRM": "Có, xóa tất cả",
+        "SUCCESS_MESSAGE": "Đã xóa tài liệu thành công",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi xóa tài liệu, vui lòng thử lại."
       },
       "BULK_SYNC": {
-        "SUCCESS_MESSAGE_ONE": "Refresh queued for 1 document",
-        "SUCCESS_MESSAGE": "Refresh queued for {count} documents",
-        "ZERO_MESSAGE": "No documents marked for refresh.",
-        "ERROR_MESSAGE": "There was an error queuing the refresh, please try again."
+        "SUCCESS_MESSAGE_ONE": "Đã xếp hàng làm mới 1 tài liệu",
+        "SUCCESS_MESSAGE": "Đã xếp hàng làm mới {count} tài liệu",
+        "ZERO_MESSAGE": "Không có tài liệu nào cần làm mới.",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi làm mới tài liệu, vui lòng thử lại."
       },
       "SYNC": {
-        "QUEUED_MESSAGE": "Refresh queued. We'll update the document shortly.",
-        "ERROR_MESSAGE": "Could not queue refresh, please try again."
+        "QUEUED_MESSAGE": "Đã đưa vào hàng đợi làm mới. Tài liệu sẽ sớm được cập nhật.",
+        "ERROR_MESSAGE": "Không thể đưa vào hàng đợi làm mới, vui lòng thử lại."
       },
       "FILTERS": {
         "SOURCE": {
-          "ALL": "All sources",
-          "WEB": "Web pages",
-          "PDF": "PDFs"
+          "ALL": "Tất cả nguồn",
+          "WEB": "Trang web (URL)",
+          "PDF": "Tệp PDF"
         },
         "STATUS": {
-          "ANY": "Any status",
-          "UPDATED": "Updated",
-          "NEEDS_UPDATE": "Needs update",
-          "UPDATING": "Updating",
-          "FAILED": "Failed"
+          "ANY": "Tất cả trạng thái",
+          "UPDATED": "Đã cập nhật",
+          "NEEDS_UPDATE": "Cần cập nhật",
+          "UPDATING": "Đang cập nhật",
+          "FAILED": "Thất bại"
         },
         "SORT": {
-          "RECENTLY_UPDATED": "Recently updated",
-          "RECENTLY_CREATED": "Recently created"
+          "RECENTLY_UPDATED": "Cập nhật gần đây",
+          "RECENTLY_CREATED": "Tạo gần đây"
         },
-        "SEARCH_PLACEHOLDER": "Search..."
+        "SEARCH_PLACEHOLDER": "Tìm kiếm tài liệu..."
       },
       "SYNC_STATUS": {
-        "SYNCED": "last updated {time}",
+        "SYNCED": "cập nhật lần cuối {time}",
         "SYNCING": "đang cập nhật...",
-        "STALE_SYNC": "update stalled",
-        "FAILED": "Failed to sync",
-        "NEVER_SYNCED": "not updated yet"
+        "STALE_SYNC": "cập nhật bị gián đoạn",
+        "FAILED": "Đồng bộ thất bại",
+        "NEVER_SYNCED": "chưa cập nhật"
       },
       "SYNC_ERRORS": {
-        "NOT_FOUND": "Page not found",
-        "ACCESS_DENIED": "Access denied",
-        "TIMEOUT": "Page took too long to respond",
-        "CONTENT_EMPTY": "Page returned empty content",
-        "FETCH_FAILED": "Could not fetch page",
-        "SYNC_ERROR": "Unexpected error",
-        "DEFAULT": "Sync error"
+        "NOT_FOUND": "Không tìm thấy trang web",
+        "ACCESS_DENIED": "Từ chối truy cập",
+        "TIMEOUT": "Trang web phản hồi quá lâu",
+        "CONTENT_EMPTY": "Trang web không có nội dung",
+        "FETCH_FAILED": "Không thể tải trang web",
+        "SYNC_ERROR": "Lỗi không xác định",
+        "DEFAULT": "Lỗi đồng bộ"
       },
       "RELATED_RESPONSES": {
-        "TITLE": "Related FAQs",
-        "DESCRIPTION": "These FAQs are generated directly from the document."
+        "TITLE": "FAQ liên quan",
+        "DESCRIPTION": "Các câu hỏi thường gặp (FAQ) này được tạo tự động từ nội dung tài liệu."
       },
-      "FORM_DESCRIPTION": "Enter the URL of the document to add it as a knowledge source and choose the assistant to associate it with.",
+      "FORM_DESCRIPTION": "Nhập đường dẫn URL hoặc tải tệp PDF lên để làm nguồn tri thức RAG cho trợ lý.",
       "CREATE": {
-        "TITLE": "Add a document",
-        "SUCCESS_MESSAGE": "The document has been successfully created",
-        "ERROR_MESSAGE": "There was an error creating the document, please try again."
+        "TITLE": "Thêm tài liệu",
+        "SUCCESS_MESSAGE": "Tài liệu đã được tạo thành công",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi tạo tài liệu, vui lòng thử lại."
       },
       "FORM": {
         "TYPE": {
-          "LABEL": "Document Type",
-          "URL": "URL",
-          "PDF": "PDF File"
+          "LABEL": "Loại tài liệu",
+          "URL": "Đường dẫn URL",
+          "PDF": "Tệp PDF"
         },
         "URL": {
-          "LABEL": "URL",
-          "PLACEHOLDER": "Enter the URL of the document",
-          "ERROR": "Please provide a valid URL for the document"
+          "LABEL": "Đường dẫn URL",
+          "PLACEHOLDER": "Nhập đường dẫn URL của bài viết/trang web",
+          "ERROR": "Vui lòng nhập đường dẫn URL hợp lệ"
         },
         "PDF_FILE": {
-          "LABEL": "PDF File",
-          "CHOOSE_FILE": "Choose PDF file",
-          "ERROR": "Please select a PDF file",
-          "HELP_TEXT": "Maximum file size: 10MB",
-          "INVALID_TYPE": "Please select a valid PDF file",
-          "TOO_LARGE": "File size exceeds 10MB limit"
+          "LABEL": "Tệp PDF",
+          "CHOOSE_FILE": "Chọn tệp PDF",
+          "ERROR": "Vui lòng chọn tệp PDF",
+          "HELP_TEXT": "Kích thước tối đa: 10MB",
+          "INVALID_TYPE": "Vui lòng chọn định dạng tệp PDF hợp lệ",
+          "TOO_LARGE": "Kích thước tệp vượt quá giới hạn 10MB"
         },
         "NAME": {
-          "LABEL": "Document Name (Optional)",
-          "PLACEHOLDER": "Enter a name for the document"
+          "LABEL": "Tên tài liệu (Tùy chọn)",
+          "PLACEHOLDER": "Nhập tên gợi nhớ cho tài liệu"
         }
       },
       "DELETE": {
-        "TITLE": "Are you sure to delete the document?",
-        "DESCRIPTION": "This action is permanent. Deleting this document will permanently erase all generated knowledge.",
+        "TITLE": "Bạn có chắc chắn muốn xóa tài liệu này?",
+        "DESCRIPTION": "Hành động này không thể hoàn tác. Xóa tài liệu sẽ gỡ bỏ vĩnh viễn các kiến thức RAG liên quan.",
         "CONFIRM": "Có, xoá",
-        "SUCCESS_MESSAGE": "The document has been successfully deleted",
-        "ERROR_MESSAGE": "There was an error deleting the document, please try again."
+        "SUCCESS_MESSAGE": "Tài liệu đã được xóa thành công",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi xóa tài liệu, vui lòng thử lại."
       },
       "OPTIONS": {
-        "VIEW_RELATED_RESPONSES": "View Related Responses",
-        "SYNC_NOW": "Refresh now",
-        "RETRY_SYNC": "Retry refresh",
-        "DELETE_DOCUMENT": "Delete Document"
+        "VIEW_RELATED_RESPONSES": "Xem FAQ/câu trả lời liên quan",
+        "SYNC_NOW": "Làm mới ngay",
+        "RETRY_SYNC": "Thử lại làm mới",
+        "DELETE_DOCUMENT": "Xóa tài liệu"
       },
       "EMPTY_STATE": {
-        "TITLE": "No documents available",
-        "SUBTITLE": "Documents are used by your assistant to generate FAQs. You can import documents to provide context for your assistant.",
-        "FILTERED_TITLE": "No matching documents",
-        "FILTERED_SUBTITLE": "Try changing the source, status, or search term.",
+        "TITLE": "Chưa có tài liệu nào",
+        "SUBTITLE": "Tài liệu là nguồn tri thức RAG được AI sử dụng để tự động trả lời khách hàng. Bạn có thể thêm URL hoặc tải tệp PDF.",
+        "FILTERED_TITLE": "Không tìm thấy tài liệu phù hợp",
+        "FILTERED_SUBTITLE": "Thử thay đổi bộ lọc nguồn, trạng thái hoặc từ khóa tìm kiếm.",
         "FEATURE_SPOTLIGHT": {
-          "TITLE": "Captain Document",
-          "NOTE": "A document in Captain serves as a knowledge resource for the assistant. By connecting your help center or guides, Captain can analyze the content and provide accurate responses for customer inquiries."
+          "TITLE": "Tài liệu MMe AI",
+          "NOTE": "Tài liệu trong MMe AI đóng vai trò là nguồn tri thức cho trợ lý. Khi kết nối tài liệu hướng dẫn hoặc trang web, AI sẽ phân tích nội dung và đưa ra phản hồi chính xác cho các thắc mắc của khách hàng."
         }
       }
     },
@@ -1021,51 +1021,51 @@
       },
       "STATUS": {
         "TITLE": "Trạng thái",
-        "PENDING": "Chờ giải quyết",
-        "APPROVED": "Approved",
+        "PENDING": "Chờ duyệt",
+        "APPROVED": "Đã duyệt",
         "ALL": "Tất cả"
       },
       "PENDING_BANNER": {
-        "TITLE": "Captain has found some FAQs your customers were looking for.",
-        "ACTION": "Click here to review"
+        "TITLE": "MMe AI đã tổng hợp một số câu hỏi thường gặp (FAQ) từ khách hàng của bạn.",
+        "ACTION": "Bấm vào đây để xem xét"
       },
-      "FORM_DESCRIPTION": "Add a question and its corresponding answer to the knowledge base and select the assistant it should be associated with.",
+      "FORM_DESCRIPTION": "Thêm câu hỏi và câu trả lời tương ứng vào cơ sở tri thức RAG và chọn trợ lý quản lý.",
       "CREATE": {
-        "TITLE": "Add an FAQ",
-        "SUCCESS_MESSAGE": "The response has been added successfully.",
-        "ERROR_MESSAGE": "An error occurred while adding the response. Please try again."
+        "TITLE": "Thêm câu hỏi FAQ",
+        "SUCCESS_MESSAGE": "FAQ đã được thêm thành công.",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi thêm FAQ. Vui lòng thử lại."
       },
       "FORM": {
         "QUESTION": {
-          "LABEL": "Question",
-          "PLACEHOLDER": "Enter the question here",
-          "ERROR": "Please provide a valid question."
+          "LABEL": "Câu hỏi",
+          "PLACEHOLDER": "Nhập nội dung câu hỏi tại đây",
+          "ERROR": "Vui lòng nhập câu hỏi hợp lệ."
         },
         "ANSWER": {
-          "LABEL": "Answer",
-          "PLACEHOLDER": "Enter the answer here",
-          "ERROR": "Please provide a valid answer."
+          "LABEL": "Câu trả lời",
+          "PLACEHOLDER": "Nhập nội dung câu trả lời tại đây",
+          "ERROR": "Vui lòng nhập câu trả lời hợp lệ."
         }
       },
       "EDIT": {
-        "TITLE": "Update the FAQ",
-        "SUCCESS_MESSAGE": "The FAQ has been successfully updated",
-        "ERROR_MESSAGE": "There was an error updating the FAQ, please try again",
-        "APPROVE_SUCCESS_MESSAGE": "The FAQ was marked as approved"
+        "TITLE": "Cập nhật FAQ",
+        "SUCCESS_MESSAGE": "FAQ đã được cập nhật thành công",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi cập nhật FAQ, vui lòng thử lại",
+        "APPROVE_SUCCESS_MESSAGE": "FAQ đã được duyệt thành công"
       },
       "OPTIONS": {
-        "APPROVE": "Approve",
+        "APPROVE": "Duyệt",
         "EDIT_RESPONSE": "Chỉnh sửa",
         "DELETE_RESPONSE": "Xoá"
       },
       "EMPTY_STATE": {
-        "TITLE": "No FAQs Found",
-        "NO_PENDING_TITLE": "There are no more pending FAQs to review",
-        "SUBTITLE": "FAQs help your assistant provide quick and accurate answers to questions from your customers. They can be generated automatically from your content or can be added manually.",
-        "CLEAR_SEARCH": "Clear active filters",
+        "TITLE": "Chưa có FAQ nào",
+        "NO_PENDING_TITLE": "Không còn FAQ nào chờ duyệt",
+        "SUBTITLE": "FAQ giúp trợ lý đưa ra câu trả lời nhanh và chính xác cho khách hàng. FAQ có thể tự động tạo từ tài liệu của bạn hoặc được thêm thủ công.",
+        "CLEAR_SEARCH": "Xóa bộ lọc tìm kiếm",
         "FEATURE_SPOTLIGHT": {
-          "TITLE": "Captain FAQ",
-          "NOTE": "Captain FAQs detects common customer questions—whether missing from your knowledge base or frequently asked—and generates relevant FAQs to improve support. You can review each suggestion and decide whether to approve or reject it."
+          "TITLE": "MMe AI FAQ",
+          "NOTE": "MMe AI tự động phát hiện các câu hỏi thường gặp của khách hàng—dù chưa có trong tài liệu hay được hỏi nhiều lần—và tạo đề xuất FAQ để nâng cao chất lượng hỗ trợ. Bạn có thể xem xét từng đề xuất và quyết định duyệt hay từ chối."
         }
       }
     },

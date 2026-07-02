@@ -231,7 +231,7 @@ vi:
     no_content: 'No content'
   conversations:
     captain:
-      handoff: 'Transferring to another agent for further assistance.'
+      handoff: 'Đang chuyển hội thoại cho nhân viên hỗ trợ tiếp theo.'
     messages:
       instagram_story_content: '%{story_sender} đã đề cập đến bạn trong hội thoại: '
       instagram_deleted_story_content: Hội thoại này không còn nữa.
@@ -249,12 +249,12 @@ vi:
         error_code: 'Error code: %{error_code}'
     activity:
       captain:
-        resolved: 'Conversation was marked resolved by %{user_name} due to inactivity'
-        resolved_with_reason: 'Conversation was marked resolved by %{user_name} (%{reason})'
-        resolved_by_tool: 'Conversation was marked resolved by %{user_name}: %{reason}'
-        open: 'Conversation was marked open by %{user_name}'
-        open_with_reason: 'Conversation was marked open by %{user_name} (%{reason})'
-        auto_opened_after_agent_reply: 'Conversation was marked open automatically after an agent reply'
+        resolved: 'Hội thoại đã được %{user_name} đánh dấu hoàn thành do không hoạt động'
+        resolved_with_reason: 'Hội thoại đã được %{user_name} đánh dấu hoàn thành (%{reason})'
+        resolved_by_tool: 'Hội thoại đã được %{user_name} giải quyết xong: %{reason}'
+        open: 'Hội thoại đã được %{user_name} chuyển sang trạng thái mở'
+        open_with_reason: 'Hội thoại đã được %{user_name} chuyển sang trạng thái mở (%{reason})'
+        auto_opened_after_agent_reply: 'Hội thoại được tự động mở sau khi có phản hồi của nhân viên'
       agent_bot:
         error_moved_to_open: 'Conversation was marked open by system due to an error with the agent bot.'
       status:
@@ -359,8 +359,8 @@ vi:
       attachment_link_title: 'Conversation (#%{conversation_id}) with %{name}'
     notion:
       name: 'Notion'
-      short_description: 'Integrate databases, documents and pages directly with Captain.'
-      description: 'Connect your Notion workspace to enable Captain to access and generate intelligent responses using content from your databases, documents, and pages to provide more contextual customer support.'
+      short_description: 'Tích hợp cơ sở dữ liệu, tài liệu và trang trực tiếp với MMe AI.'
+      description: 'Kết nối không gian làm việc Notion của bạn để cho phép MMe AI truy cập và tạo câu trả lời thông minh từ cơ sở dữ liệu, tài liệu hỗ trợ khách hàng theo ngữ cảnh tốt hơn.'
     shopify:
       name: 'Shopify'
       short_description: 'Access order details and customer data from your Shopify store.'
@@ -371,18 +371,18 @@ vi:
       description: 'Sync your contacts and conversations with LeadSquared CRM. This integration automatically creates leads in LeadSquared when new contacts are added, and logs conversation activity to provide your sales team with complete context.'
   captain:
     copilot_message_required: Thông điệp bắt buộc có
-    copilot_error: 'Please connect an assistant to this inbox to use Copilot'
-    copilot_limit: 'You are out of Copilot credits. You can buy more credits from the billing section.'
-    upgrade: 'Nâng cấp gói của bạn để bật Captain AI'
-    disabled: 'Captain AI bị vô hiệu hóa cho tài khoản này.'
-    api_key_missing: 'Chưa cấu hình khóa API Captain AI.'
+    copilot_error: 'Vui lòng kết nối trợ lý MMe AI vào hộp thư này để sử dụng Copilot'
+    copilot_limit: 'Bạn đã hết tín dụng Copilot. Bạn có thể mua thêm trong mục Thanh toán.'
+    upgrade: 'Nâng cấp gói dịch vụ để kích hoạt MMe AI'
+    disabled: 'MMe AI đã bị vô hiệu hóa cho tài khoản này.'
+    api_key_missing: 'Chưa cấu hình khóa API cho MMe AI.'
     copilot:
       using_tool: 'Đang sử dụng công cụ %{function_name}'
-      completed_tool_call: 'Đã hoàn thành cuộc gọi công cụ %{function_name}'
+      completed_tool_call: 'Đã hoàn thành gọi công cụ %{function_name}'
       invalid_tool_call: 'Cuộc gọi công cụ không hợp lệ'
       tool_not_available: 'Công cụ không khả dụng'
     documents:
-      limit_exceeded: 'Document limit exceeded'
+      limit_exceeded: 'Đã vượt quá giới hạn tài liệu MMe AI'
       pdf_format_error: 'must be a PDF file'
       pdf_size_error: 'must be less than 10MB'
       sync_not_supported_for_pdf: 'Sync is not supported for PDF documents'
@@ -525,11 +525,11 @@ vi:
     inbox_already_assigned: 'Inbox has already been assigned to this policy'
   portals:
     articles:
-      captain_not_available: 'Translation requires Captain to be enabled for this account'
-      locale_not_available: 'Locale not available in this portal'
-      category_not_found: 'Category not found in this portal'
-      no_articles_found: 'No articles found to process'
-      invalid_status: 'Invalid status value'
+      captain_not_available: 'Yêu cầu kích hoạt MMe AI cho tài khoản này để dịch tự động'
+      locale_not_available: 'Ngôn ngữ không khả dụng trên cổng này'
+      category_not_found: 'Không tìm thấy danh mục'
+      no_articles_found: 'Không tìm thấy bài viết để xử lý'
+      invalid_status: 'Giá trị trạng thái không hợp lệ'
     send_instructions:
       email_required: 'Email bắt buộc có'
       invalid_email_format: 'Invalid email format'

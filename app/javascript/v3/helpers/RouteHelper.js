@@ -48,8 +48,8 @@ export const validateRouteAccess = (to, next, chatwootConfig = {}) => {
     to.meta &&
     to.meta.requireEnterprise;
 
-  if (!to.name || isAnInalidSignupNavigation || isEnterpriseOnlyPath) {
-    next(frontendURL('login'));
+  if (!to.name || isAnInalidSignupNavigation || isEnterpriseOnlyPath || to.name === 'login') {
+    window.location.href = window.globalConfig?.PORTAL_URL || 'https://portal.mme.vn';
     return;
   }
 

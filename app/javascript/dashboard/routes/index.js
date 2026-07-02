@@ -16,7 +16,7 @@ export const validateAuthenticateRoutePermission = async (to, next) => {
   const { isLoggedIn, getCurrentUser: user } = store.getters;
 
   if (!isLoggedIn) {
-    window.location.assign('/app/login');
+    window.location.href = window.globalConfig?.PORTAL_URL || 'https://portal.mme.vn';
     return '';
   }
 

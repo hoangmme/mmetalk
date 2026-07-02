@@ -31,6 +31,7 @@ class DashboardController < ActionController::Base
   before_action :set_dashboard_scripts
   around_action :switch_locale
   before_action :ensure_installation_onboarding, only: [:index]
+  before_action :redirect_unauthenticated_to_portal, only: [:index]
   before_action :render_hc_if_custom_domain, only: [:index]
   before_action :ensure_html_format
   layout 'vueapp'
@@ -114,5 +115,14 @@ class DashboardController < ActionController::Base
     current_path = request.path.gsub(%r{^/app}, '')
 
     sensitive_paths.include?(current_path)
+  end
+
+  def redirect_unauthenticated_to_portal
+    return if cookies[:cw_d_session_info].present? || sensitive_path?
+
+    redirect_path = request.path.chomp('/')
+    return unless ['', '/app', '/app/login'].include?(redirect_path)
+
+    redirect_to ENV.fetch('PORTAL_URL', 'https://portal.mme.vn'), allow_other_host: true
   end
 end

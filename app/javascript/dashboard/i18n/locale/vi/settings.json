@@ -311,15 +311,15 @@
     "ACTIVE": "Có hiệu lực",
     "COMPANIES": "Companies",
     "ALL_COMPANIES": "All Companies",
-    "CAPTAIN": "Captain",
-    "CAPTAIN_ASSISTANTS": "Assistants",
-    "CAPTAIN_DOCUMENTS": "Documents",
-    "CAPTAIN_RESPONSES": "FAQs",
-    "CAPTAIN_TOOLS": "Tools",
-    "CAPTAIN_SCENARIOS": "Scenarios",
-    "CAPTAIN_PLAYGROUND": "Playground",
-    "CAPTAIN_INBOXES": "Hộp thư đến",
-    "CAPTAIN_SETTINGS": "Cài đặt",
+    "CAPTAIN": "MMe AI",
+    "CAPTAIN_ASSISTANTS": "Trợ lý",
+    "CAPTAIN_DOCUMENTS": "Tài liệu",
+    "CAPTAIN_RESPONSES": "Câu hỏi thường gặp (FAQ)",
+    "CAPTAIN_TOOLS": "Công cụ",
+    "CAPTAIN_SCENARIOS": "Tình huống",
+    "CAPTAIN_PLAYGROUND": "Sân chơi kiểm thử",
+    "CAPTAIN_INBOXES": "Hộp thư kết nối",
+    "CAPTAIN_SETTINGS": "Cài đặt MMe AI",
     "HOME": "Trang Chủ",
     "AGENTS": "Đại lý",
     "AGENT_BOTS": "Bots",
@@ -381,55 +381,55 @@
     },
     "DOCS": "Đọc tài liệu",
     "SECURITY": "Security",
-    "CAPTAIN_AI": "Captain",
-    "CONVERSATION_WORKFLOW": "Conversation Workflow"
+    "CAPTAIN_AI": "MMe AI",
+    "CONVERSATION_WORKFLOW": "Luồng hội thoại"
   },
   "CAPTAIN_SETTINGS": {
-    "TITLE": "Captain Settings",
-    "DESCRIPTION": "Configure your AI models and features for Captain. Captain follows a credit based billing, you will be charged credits for every action Captain takes based on the model selected.",
-    "LOADING": "Loading Captain configuration...",
-    "LINK_TEXT": "Learn more about Captain Credits",
-    "NOT_ENABLED": "Captain is not enabled for your account. Please upgrade your plan to access Captain features.",
+    "TITLE": "Cài đặt MMe AI",
+    "DESCRIPTION": "Cấu hình mô hình AI và tính năng cho MMe AI. MMe AI tính phí dựa trên lượt sử dụng tùy thuộc vào mô hình AI được chọn.",
+    "LOADING": "Đang tải cấu hình MMe AI...",
+    "LINK_TEXT": "Tìm hiểu thêm về tín dụng MMe AI",
+    "NOT_ENABLED": "MMe AI chưa được kích hoạt cho tài khoản của bạn. Vui lòng nâng cấp gói dịch vụ để sử dụng MMe AI.",
     "MODEL_CONFIG": {
-      "TITLE": "Model Configuration",
-      "DESCRIPTION": "Select AI models for different features.",
-      "SELECT_MODEL": "Select model",
-      "CREDITS_PER_MESSAGE": "{credits} credit/message",
-      "COMING_SOON": "Coming soon",
+      "TITLE": "Cấu hình mô hình AI",
+      "DESCRIPTION": "Chọn mô hình AI cho các tính năng khác nhau.",
+      "SELECT_MODEL": "Chọn mô hình",
+      "CREDITS_PER_MESSAGE": "{credits} tín dụng/tin nhắn",
+      "COMING_SOON": "Sắp ra mắt",
       "EDITOR": {
-        "TITLE": "Editor Features",
-        "DESCRIPTION": "Powers smart compose, grammar corrections, tone adjustments, and content enhancement in your message editor."
+        "TITLE": "Tính năng soạn thảo",
+        "DESCRIPTION": "Hỗ trợ soạn thảo thông minh, sửa ngữ pháp, điều chỉnh giọng văn và hoàn thiện nội dung tin nhắn."
       },
       "ASSISTANT": {
-        "TITLE": "Assistant",
-        "DESCRIPTION": "Handles automated responses, conversation summaries, and intelligent reply suggestions for customer interactions."
+        "TITLE": "Trợ lý tự động",
+        "DESCRIPTION": "Tự động phản hồi khách hàng, tóm tắt hội thoại và gợi ý câu trả lời thông minh."
       },
       "COPILOT": {
-        "TITLE": "Co-pilot",
-        "DESCRIPTION": "Provides real-time contextual suggestions, knowledge base recommendations, and proactive insights during conversations."
+        "TITLE": "Trợ lý Copilot",
+        "DESCRIPTION": "Cung cấp gợi ý theo ngữ cảnh theo thời gian thực, đề xuất tài liệu KB và thông tin hữu ích trong quá trình trò chuyện."
       }
     },
     "FEATURES": {
       "TITLE": "Các tính năng",
-      "DESCRIPTION": "Enable or disable AI-powered features.",
+      "DESCRIPTION": "Bật hoặc tắt các tính năng AI.",
       "AUDIO_TRANSCRIPTION": {
-        "TITLE": "Audio Transcription",
-        "DESCRIPTION": "Automatically convert voice messages and call recordings into searchable text transcripts."
+        "TITLE": "Chuyển giọng nói thành văn bản",
+        "DESCRIPTION": "Tự động chuyển đổi tin nhắn thoại và bản ghi âm cuộc gọi thành văn bản có thể tìm kiếm."
       },
       "HELP_CENTER_SEARCH": {
-        "TITLE": "Help Center Search Indexing",
-        "DESCRIPTION": "Use AI for context aware search inside your help center articles."
+        "TITLE": "Chỉ mục tìm kiếm Trung tâm trợ giúp",
+        "DESCRIPTION": "Sử dụng AI để tìm kiếm theo ngữ cảnh trong các bài viết hướng dẫn."
       },
       "LABEL_SUGGESTION": {
-        "TITLE": "Label Suggestion",
-        "DESCRIPTION": "Automatically suggest relevant labels and tags for conversations based on content analysis and context.",
-        "MODEL_TITLE": "Label Suggestion Model",
-        "MODEL_DESCRIPTION": "Select the AI model to use for analyzing conversations and suggesting appropriate labels"
+        "TITLE": "Gợi ý nhãn (Tag)",
+        "DESCRIPTION": "Tự động gợi ý nhãn và phân loại phù hợp cho cuộc trò chuyện dựa trên phân tích nội dung.",
+        "MODEL_TITLE": "Mô hình gợi ý nhãn",
+        "MODEL_DESCRIPTION": "Chọn mô hình AI để phân tích và gợi ý nhãn cho hội thoại"
       }
     },
     "API": {
-      "SUCCESS": "Captain settings updated successfully.",
-      "ERROR": "Failed to update Captain settings. Please try again."
+      "SUCCESS": "Cài đặt MMe AI đã được cập nhật thành công.",
+      "ERROR": "Cập nhật cài đặt MMe AI thất bại. Vui lòng thử lại."
     }
   },
   "BILLING_SETTINGS": {
@@ -448,12 +448,12 @@
       "BUTTON_TXT": "Đi tới cổng thanh toán"
     },
     "CAPTAIN": {
-      "TITLE": "Captain",
-      "DESCRIPTION": "Manage usage and credits for Captain AI.",
-      "BUTTON_TXT": "Buy more credits",
-      "DOCUMENTS": "Documents",
-      "RESPONSES": "Responses",
-      "UPGRADE": "Captain is not available on the free plan, upgrade now to get access to assistants, copilot and more.",
+      "TITLE": "MMe AI",
+      "DESCRIPTION": "Quản lý lượt sử dụng và tín dụng cho MMe AI.",
+      "BUTTON_TXT": "Mua thêm lượt AI",
+      "DOCUMENTS": "Tài liệu",
+      "RESPONSES": "Câu trả lời/FAQ",
+      "UPGRADE": "MMe AI không khả dụng trên gói miễn phí, hãy nâng cấp ngay để truy cập trợ lý, copilot và nhiều tính năng hơn nữa.",
       "REFRESH_CREDITS": "Làm mới"
     },
     "CHAT_WITH_US": {
@@ -465,7 +465,7 @@
     "TOPUP": {
       "BUY_CREDITS": "Buy more credits",
       "MODAL_TITLE": "Buy AI Credits",
-      "MODAL_DESCRIPTION": "Purchase additional credits for Captain AI.",
+      "MODAL_DESCRIPTION": "Mua thêm lượt sử dụng cho MMe AI.",
       "CREDITS": "CREDITS",
       "ONE_TIME": "one-time",
       "POPULAR": "Most Popular",

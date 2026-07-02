@@ -28,6 +28,7 @@ class Captain::Assistant::AgentRunnerService
   end
 
   def generate_response(message_history: [])
+    Llm::Config.configure_ai_agents!
     message_to_process, context = run_payload(message_history)
     result = runner.run(message_to_process, context: context, max_turns: 100)
 
